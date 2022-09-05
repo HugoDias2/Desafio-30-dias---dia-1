@@ -1,0 +1,102 @@
+body
+{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(180deg, rgba(0,36,33,1) 0%, rgba(8,28,133,1) 0%, rgba(9,9,121,1) 0%, rgba(0,4,42,1) 0%, rgba(233,235,236,1) 100%, rgba(7,15,102,1) 100%);
+}
+ul
+{
+    margin: 1vh;
+    padding: 1vh;
+    display: flex !important;
+    flex-wrap: wrap;
+
+}
+
+ul li 
+{
+    position: relative;
+    list-style: none;
+    width: 15vh;
+    height: 8vh;
+    margin: 0 4vh;
+    transform:  skew(25deg);
+    background: rgb(171, 167, 224);
+    border-radius: 1em
+
+}
+ul li span
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    transition: 0.5s;
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 30px !important;
+    border-radius: 1em
+}
+ul li:hover span
+{
+    box-shadow: -1px 1px 1px rgba(0,0,0,.1);
+}
+ul li:hover span:nth-child(5)
+{
+    transform: translate(40px, -40px);
+    opacity: 1;
+}
+ul li:hover span:nth-child(4)
+{
+    transform: translate(30px, -30px);
+    opacity: 0.8;
+}
+ul li:hover span:nth-child(3)
+{
+    transform: translate(20px, -20px);
+    opacity: 0.6;
+}
+ul li:hover span:nth-child(2)
+{
+    transform: translate(10px, -10px);
+    opacity: 0.4;
+}
+ul li:hover span:nth-child(1)
+{
+    transform: translate(0,0);
+    opacity: .2;
+}
+ul li:nth-child(1) span
+{
+    background: #3b5999;
+}
+ul li:nth-child(2) span
+{
+    background: #55acee;
+}
+ul li:nth-child(3) span
+{
+    background: #dd4b39;
+}
+ul li:nth-child(4) span
+{
+    background: #0077b5;
+}
+ul li:nth-child(5) span
+{
+    background: #e4405f;
+}
+
+@media only screen and (max-width:900px) {
+    ul{
+        display: flex;
+        flex-direction: column;
+        gap: 4vh;
+    }
+}
